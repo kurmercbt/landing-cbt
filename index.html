@@ -1,50 +1,99 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Halaman Ujian CBT</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portal Ujian CBT Sekolah</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f4f8;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #f0f4f8, #e0eafc);
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
+      justify-content: flex-start;
+      min-height: 100vh;
     }
 
-    h1 {
-      margin-bottom: 30px;
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      margin: 10px 0 0;
+      font-size: 26px;
       color: #333;
     }
 
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }
+
     .btn {
-      display: inline-block;
-      padding: 20px 40px;
-      margin: 10px;
+      display: block;
+      width: 220px;
+      padding: 20px;
+      margin: 15px;
+      text-align: center;
       font-size: 20px;
       font-weight: bold;
       color: white;
-      background-color: #1976d2;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
       text-decoration: none;
-      transition: background-color 0.3s ease;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
     }
 
     .btn:hover {
-      background-color: #125ea2;
+      transform: scale(1.05);
+    }
+
+    .kelas10 {
+      background-color: #2e7d32;
+    }
+
+    .kelas11 {
+      background-color: #f9a825;
+      color: black;
+    }
+
+    .kelas12 {
+      background-color: #800000;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      font-size: 12px;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <h1>Silakan pilih kelas untuk memulai ujian</h1>
-  <a href="http://excbt123.smabomgresik.sch.id:4713" class="btn">Kelas 10</a>
-  <a href="http://cbt11.namaschool.sch.id/login/index.php" class="btn">Kelas 11</a>
+  <header>
+    <img src="logo.png" alt="Logo Sekolah" />
+    <h1>Portal Ujian CBT Sekolah</h1>
+  </header>
+
+  <div class="container">
+    <a href="https://cbt10.namaschool.sch.id/login/index.php" class="btn kelas10">Masuk Kelas 10</a>
+    <a href="https://cbt11.namaschool.sch.id/login/index.php" class="btn kelas11">Masuk Kelas 11</a>
+    <a href="https://cbt12.namaschool.sch.id/login/index.php" class="btn kelas12">Masuk Kelas 12</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Sekolah Anda. Seluruh hak cipta dilindungi.
+  </footer>
 </body>
 </html>
-
